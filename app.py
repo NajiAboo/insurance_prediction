@@ -1,5 +1,5 @@
  
-from ssl import CHANNEL_BINDING_TYPES
+
 import sys
 import os
 import json
