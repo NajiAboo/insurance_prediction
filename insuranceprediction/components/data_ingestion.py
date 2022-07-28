@@ -1,15 +1,13 @@
-
-
 import os
 import sys
 import shutil
-import logging
 import numpy as np
 import pandas as pd
 
 from typing import Tuple
 from six.moves import urllib
 
+from insuranceprediction.logger import logging
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedShuffleSplit
 from insuranceprediction.entity.artifact_entity import DataIngestionArtifact
