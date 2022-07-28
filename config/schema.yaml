@@ -1,0 +1,40 @@
+columns:
+  age: float
+  sex: category
+  bmi: float
+  children: int
+  smoker: bool
+  region: category
+  charges: float
+
+numerical_columns:
+  - age
+  - bmi
+  - children
+
+categorical_columns:
+  - sex
+  - region
+  - smoker
+
+boolean_columns:
+  - smoker
+
+target_column: charges
+
+domain_values:
+  sex:
+    - male
+    - female
+  region:
+    - southwest
+    - southeast
+    - northwest
+    - northeast
+  smoker:
+    - 'yes'
+    - 'no'
+
+
+
+

@@ -1,0 +1,10 @@
+Flask
+gunicorn
+sklearn
+numpy
+pandas
+matplotlib
+PyYAML==5.1
+evidently
+dill
+-e .

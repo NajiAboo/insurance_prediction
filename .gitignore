@@ -127,3 +127,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+build/
+dist/
+venv/
+medicalcost_predictor.egg-info/
+notebooks/.ipynb_checkpoints
+medicalcost_logs/
+__pycache__/
+medicalcost_logs/
+insuranceprediction/artifact/
+insuranceprediction_logs/
+saved_models/

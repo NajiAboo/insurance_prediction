@@ -1,0 +1,46 @@
+training_pipeline_config:
+  pipeline_name: insuranceprediction
+  artifact_dir: artifact
+
+data_ingestion_config:
+  dataset_download_url: https://gist.githubusercontent.com/meperezcuello/82a9f1c1c473d6585e750ad2e3c05a41/raw/d42d226d0dd64e7f5395a0eec1b9190a10edbc03/Medical_Cost.csv
+  raw_data_dir: raw_data
+  ingested_dir: ingested_data
+  ingested_train_dir: train
+  ingested_test_dir: test
+
+data_valiadtion_config:
+  schema_dir: config
+  schema_file_name: schema.yaml
+  report_file_name: report.json
+  report_page_file_name: report.html
+  pushed_report_file_name: pushed_report.json
+  pushed_report_page_file_name: pushed_report.html
+
+
+data_transformation_config:
+  transformed_dir: transformed_data
+  transformed_train_dir: train
+  transformed_test_dir: test
+  preprocessing_dir: preprocessed
+  preprocessed_object_file_name: preprocessed.pkl
+
+
+model_trainer_config:
+  trained_model: trained_model
+  model_file_name: model.pkl
+  best_accuracy: 0.6
+  model_config_dir: config
+  model_config_file_name: model.yaml
+
+model_evaluation_config:
+  model_evaluation_file_name: model_evaluation.yaml
+  model_evaluation_history_file_path: model_history.csv
+
+model_pusher_config:
+  model_export_dir: saved_models
+
+pushed_model_artifact_config_info: "pushed_artifact_info.yaml"
+
+  
+
